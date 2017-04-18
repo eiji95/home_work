@@ -1,9 +1,12 @@
 HomeWork::Application.routes.draw do
-  get "static/popover"
-  get "static/tooltip"
-  get "static/carousel"
-  get "static/tab"
-  get "static/home"
+  
+  root 'static#home'
+  match '/popover',  to: 'static#popover',  via: 'get'
+  match '/tooltip',  to: 'static#tooltip',  via: 'get'
+  match '/carousel', to: 'static#carousel', via: 'get'
+  match '/tab',      to: 'static#tab',      via: 'get'
+  match '/home',     to: 'static#home',     via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

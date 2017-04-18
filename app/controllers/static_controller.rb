@@ -10,4 +10,7 @@ class StaticController < ApplicationController
 
   def tab
   end
+  
+  def home
+  end
 end
