@@ -6,26 +6,15 @@
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    
+    <%= render 'layouts/shiv' %>
+    
   </head>
   <body>
-    <header class="navbar bnavbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "HOME_WORK", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "carousel", '#' %></li>
-            <li><%= link_to "popover", '#' %></li>
-            <li><%= link_to "tab", '#' %></li>
-            <li><%= link_to "tooltip", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
     </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
