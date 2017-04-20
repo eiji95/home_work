@@ -1,2 +1,17 @@
 <h1>Static#tooltip</h1>
-<p>Find me in app/views/static/tooltip.html.erb</p>
+
+<div class="center">
+<button type="button" class="btn btn-lg btn-primary" data-container="body" data-toggle="tooltip" data-placement="left" title="Tooltip 左に表示！">Tooltip on left</button>
+
+<button type="button" class="btn btn-lg btn-info" data-container="body" data-toggle="tooltip" data-placement="top" title="Tooltip 上に表示！">Tooltip on top</button>
+
+<button type="button" class="btn btn-lg btn-warning" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Tooltip 下に表示！">Tooltip on bottom</button>
+
+<button type="button" class="btn btn-lg btn-success" data-container="body" data-toggle="tooltip" data-placement="right" title="Tooltip 右に表示">Tooltip on right</button>
+</div>
+
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>

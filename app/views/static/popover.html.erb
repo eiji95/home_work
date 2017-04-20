@@ -1,2 +1,25 @@
 <h1>Static#popover</h1>
-<p>Find me in app/views/static/popover.html.erb</p>
+
+<div class=center>
+<button type="button" class="btn btn-lg btn-primary" data-container="body" data-toggle="popover" data-placement="left" data-content="左にPOPを表示">
+  Popover on left
+</button>
+
+<button type="button" class="btn btn-lg btn-danger" data-container="body" data-toggle="popover" data-placement="top" data-content="上にPOPを表示">
+  Popover on top
+</button>
+
+<button type="button" class="btn btn-lg btn-success" data-container="body" data-toggle="popover" data-placement="bottom" data-content="下にPOPを表示">
+  Popover on bottom
+</button>
+
+<button type="button" class="btn btn-lg btn-warning" data-container="body" data-toggle="popover" data-placement="right" data-content="右にPOPを表示">
+  Popover on right
+</button>
+</div>
+
+<script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+</script>

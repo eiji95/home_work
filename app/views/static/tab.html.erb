@@ -1,2 +1,17 @@
 <h1>Static#tab</h1>
-<p>Find me in app/views/static/tab.html.erb</p>
+
+<!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tokyo" aria-controls="tokyo" role="tab" data-toggle="tab">東京都</a></li>
+    <li role="presentation"><a href="#saitama" aria-controls="profile" role="tab" data-toggle="tab">埼玉県</a></li>
+    <li role="presentation"><a href="#kanagawa" aria-controls="messages" role="tab" data-toggle="tab">神奈川県</a></li>
+    <li role="presentation"><a href="#chiba" aria-controls="settings" role="tab" data-toggle="tab">千葉県</a></li>
+  </ul>
+
+<!-- Tabの内容 -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tokyo">東京都（とうきょうと）は、<br>関東地方に位置する東京都区部（東京23区）、多摩地域、島嶼部（大島支庁・三宅支庁・八丈支庁・小笠原支庁）を<br>管轄する広域地方公共団体（都道府県）の一つ。都庁所在地は新宿区</div>
+    <div role="tabpanel" class="tab-pane" id="saitama">埼玉（さいたま）とは、<br>関東地方の中央西側に位置する県。<br>県庁所在地はさいたま市。<br></div>
+    <div role="tabpanel" class="tab-pane" id="kanagawa">神奈川県（かながわけん）は、<br>日本の県の一つ。関東地方の南西端、東京都の南に位置する。<br>県庁所在地は横浜市。</div>
+    <div role="tabpanel" class="tab-pane" id="chiba">千葉県（ちばけん）は、<br>日本の関東地方の南東側、東京都の東方に位置する県。房総半島と関東平野の南部にまたがる。<br>県庁所在地は千葉市。</div>
+  </div>

@@ -13,4 +13,10 @@ class StaticController < ApplicationController
   
   def home
   end
+  
+  def modal
+  end
+  
+  def form
+  end
 end

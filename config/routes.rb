@@ -6,6 +6,8 @@ HomeWork::Application.routes.draw do
   match '/carousel', to: 'static#carousel', via: 'get'
   match '/tab',      to: 'static#tab',      via: 'get'
   match '/home',     to: 'static#home',     via: 'get'
+  match '/modal',    to: 'static#modal',    via: 'get'
+  match '/form',     to: 'static#form',     via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
